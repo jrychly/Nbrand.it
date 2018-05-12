@@ -12539,11 +12539,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/jakubjirkal/Projects/ImageChecker/ImageChecker/ImageChecker.csproj",
+      "projectUniqueName": "/Users/jakubjirkal/Documents/GitHub/imagechecker/ImageChecker/ImageChecker.csproj",
       "projectName": "ImageChecker",
-      "projectPath": "/Users/jakubjirkal/Projects/ImageChecker/ImageChecker/ImageChecker.csproj",
+      "projectPath": "/Users/jakubjirkal/Documents/GitHub/imagechecker/ImageChecker/ImageChecker.csproj",
       "packagesPath": "/Users/jakubjirkal/.nuget/packages/",
-      "outputPath": "/Users/jakubjirkal/Projects/ImageChecker/ImageChecker/obj",
+      "outputPath": "/Users/jakubjirkal/Documents/GitHub/imagechecker/ImageChecker/obj",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
