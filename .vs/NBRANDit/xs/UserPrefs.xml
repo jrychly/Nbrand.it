@@ -1,0 +1,19 @@
+﻿<Properties StartupConfiguration="{8CD6BD0E-48B5-4D50-BC3F-26766ADB4E87}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="NBRANDit/Models/AllImages.cs">
+    <Files>
+      <File FileName="NBRANDit/Models/AllImages.cs" Line="25" Column="6" />
+      <File FileName="NBRANDit/Controllers/HomeController.cs" Line="52" Column="2" />
+      <File FileName="NBRANDit/Views/Home/Index.cshtml" Line="1" Column="1" />
+      <File FileName="NBRANDit/Views/Home/Done.cshtml" Line="1" Column="1" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore>
+      <Breakpoint file="/Users/jakubjirkal/Documents/GitHub/imagechecker/NBRANDit/Models/AllImages.cs" relfile="NBRANDit/Models/AllImages.cs" line="22" column="1" />
+    </BreakpointStore>
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.ItemProperties.NBRANDit PreferredExecutionTarget="MonoDevelop.Default" />
+  <MultiItemStartupConfigurations />
+</Properties>

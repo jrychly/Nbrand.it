@@ -45,7 +45,7 @@ namespace NBRANDit.Controllers
             allImages.Images.Add(passedPath);
 
 
-            Console.WriteLine("sdas");
+            allImages.Calc();
             return View(allImages);
         }
     }
