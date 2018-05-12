@@ -1,4 +1,32 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto");
 body {
-  color: red;
+  font-family: "Roboto";
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+}
+
+.menu-title {
+  margin: 15px;
+  font-family: "Roboto";
+  font-size: 25px;
+  color: #00E600;
+}
+
+.menu-items {
+  display: flex;
+  justify-content: space-between;
+  text-transform: uppercase;
+  opacity: 0.8;
+}
+
+.menu-items-item {
+  margin: 15px;
+}
+
+.menu-profile {
+  margin: 15px;
 }
 /*# sourceMappingURL=style.css.map */
