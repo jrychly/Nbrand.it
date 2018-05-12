@@ -50,12 +50,9 @@ body {
   border-style: dashed;
 }
 
-.drag-message {
-  margin: 25px;
-}
-
 .drag-button {
   min-width: 20%;
+  margin: 25px;
   padding: 25px;
   font-size: 15px;
   text-transform: uppercase;
@@ -64,6 +61,7 @@ body {
   background-color: #00E600;
   border: none;
   border-radius: 27.5px;
+  box-shadow: 0 0 15px 0 #fff829;
 }
 
 @media (max-width: 900px) {
