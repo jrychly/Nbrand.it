@@ -1,0 +1,27 @@
+﻿@model AllImages
+
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Nbrand.it</title>
+        <link rel="stylesheet" href="../../Assets/style.css">
+</head>
+<body>
+     <div class="menu">
+        <div class="menu-title">Nbrand.it</div>
+        <div class="menu-items">
+            <div class="menu-items-item">About</div> 
+            <div class="menu-items-item">What we do</div> 
+            <div class="menu-items-item">Help</div>         
+        </div>
+        <div class="menu-profile">15 credits</div>
+    </div>
+        
+     @foreach(string str in Model.Images)
+    {<img src= "@Url.Content("~/Uploads/"+str)" alt="Image" />}
+</body>
+</html>
