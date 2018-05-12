@@ -1,4 +1,9 @@
 @import url("https://fonts.googleapis.com/css?family=Roboto");
+@font-face {
+  font-family: 'Axis';
+  src: url("../Assets/fonts/axis.otf") format("opentype");
+}
+
 body {
   font-family: "Roboto";
 }
@@ -10,14 +15,15 @@ body {
 
 .menu-title {
   margin: 15px;
-  font-family: "Roboto";
-  font-size: 25px;
+  font-family: "Axis";
+  font-size: 30px;
   color: #00E600;
 }
 
 .menu-items {
   display: flex;
   justify-content: space-between;
+  margin-top: 13px;
   text-transform: uppercase;
   opacity: 0.8;
 }
@@ -28,5 +34,45 @@ body {
 
 .menu-profile {
   margin: 15px;
+}
+
+.drag {
+  margin: 80px 200px 200px 200px;
+  text-align: center;
+}
+
+.drag-input {
+  min-width: 60%;
+  height: 20vh;
+  margin: 0 auto 0 auto;
+  padding: 150px 25px 0 25px;
+  border: 5px solid #00E600;
+  border-style: dashed;
+}
+
+.drag-message {
+  margin: 25px;
+}
+
+.drag-button {
+  min-width: 20%;
+  padding: 25px;
+  font-size: 15px;
+  text-transform: uppercase;
+  font-family: 'Axis';
+  color: #fff;
+  background-color: #00E600;
+  border: none;
+  border-radius: 27.5px;
+}
+
+@media (max-width: 900px) {
+  .menu {
+    display: block;
+    width: 100%;
+  }
+  .menu-title {
+    text-align: center;
+  }
 }
 /*# sourceMappingURL=style.css.map */
