@@ -9,7 +9,7 @@
 </head>
 <body>
     <div class="menu">
-        <div class="menu-title">Nbrand.it</div>
+        <div class="menu-title"><a href="/">Nbrand.it</a></div>
         <div class="menu-items">
             <div class="menu-items-item">About</div> 
             <div class="menu-items-item">What we do</div> 
@@ -18,19 +18,13 @@
         <div class="menu-profile">15 credits</div>
     </div>
     <div class="drag">
-     @using (Html.BeginForm("Index",
-                                    "Home",
-                                    FormMethod.Post,
-                                    new { enctype = "multipart/form-data"}))
-{
-    <div class="drag-input">
-    <label for="file">Select Image:</label>
-    <input type="file" name="file" id="file" /><br><br>
-                </div>
-    <button class="drag-button" type="submit">Upload</button>
-    <br><br>
-    @ViewBag.Message
-}
+        @using (Html.BeginForm("Index", "Home", FormMethod.Post, new { enctype = "multipart/form-data"})){
+        <div class="drag-input">
+            <input type="file" name="file" id="file" /><br><br>
+        </div>
+        <button class="drag-button" type="submit">Upload</button>
+        <div class="drag-message">@ViewBag.Message</div>
+        }
     </div>
 </body>
 </html>

@@ -58,10 +58,18 @@ body {
   text-transform: uppercase;
   font-family: 'Axis';
   color: #fff;
-  background-color: #00E600;
+  background: linear-gradient(130deg, #00E600, #fff829);
   border: none;
   border-radius: 27.5px;
-  box-shadow: 0 0 15px 0 #fff829;
+}
+
+a {
+  color: #00E600;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #00E600;
 }
 
 @media (max-width: 900px) {
