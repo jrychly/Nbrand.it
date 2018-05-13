@@ -18,7 +18,7 @@ public class AllImages{
         vals = new List<string>();
         vals.Add("95%");
         vals.Add("46% (same text)");
-        vals.Add("31% (partly text)");
+        vals.Add("31% (simmilar text)");
         vals.Add("11%");
     }
 }

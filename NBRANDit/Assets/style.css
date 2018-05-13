@@ -5,6 +5,7 @@
 }
 
 body {
+  margin: 0 auto;
   font-family: "Roboto";
 }
 
@@ -23,9 +24,10 @@ body {
 .menu-items {
   display: flex;
   justify-content: space-between;
-  margin-top: 13px;
+  margin-top: 7px;
   text-transform: uppercase;
-  opacity: 0.8;
+  opacity: 0.7;
+  font-size: 20px;
 }
 
 .menu-items-item {
@@ -43,9 +45,9 @@ body {
 
 .drag-input {
   min-width: 60%;
-  height: 20vh;
+  min-height: 30vh;
   margin: 0 auto 0 auto;
-  padding: 150px 25px 0 25px;
+  padding: 65px 25px 0 25px;
   border: 5px solid #00E600;
   border-style: dashed;
 }
@@ -63,6 +65,57 @@ body {
   border-radius: 27.5px;
 }
 
+.drag-button-done {
+  min-width: 10%;
+}
+
+.drag-icon {
+  color: #00E600;
+  font-size: 3em;
+}
+
+.done-class {
+  margin: 110px auto 0 auto;
+  width: 80%;
+}
+
+.done-box {
+  margin-left: -5%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.done-text {
+  padding: 10px;
+  font-size: 25px;
+  text-align: center;
+  background-color: #34ff34;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.done-item {
+  margin-left: 35px;
+  box-shadow: 0 0 15px 0 rgba(199, 198, 198, 0.5);
+  border-radius: 5px;
+}
+
+.done-image {
+  opacity: 1;
+}
+
+.done-image:hover {
+  opacity: 0.9;
+}
+
+.done-active {
+  box-shadow: 0 0 15px 0 #c30000;
+}
+
+.done-active-text {
+  background-color: #ff2a2a;
+}
+
 a {
   color: #00E600;
   text-decoration: none;
@@ -70,6 +123,10 @@ a {
 
 a:hover {
   color: #00E600;
+}
+
+.box__dragndrop {
+  display: none;
 }
 
 @media (max-width: 900px) {

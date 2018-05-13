@@ -12,20 +12,32 @@
 </head>
 <body>
      <div class="menu">
-        <div class="menu-title">Nbrand.it</div>
-        <div class="menu-items">
-            <div class="menu-items-item">About</div> 
-            <div class="menu-items-item">What we do</div> 
-            <div class="menu-items-item">Help</div>         
-        </div>
-        <div class="menu-profile">14 credits</div>
+        <div class="menu-title"><a href="/">Nbrand.it</a></div>
     </div>
-     @for(int i = 0; i < Model.Images.Count()-1; i++)
-    {<div><img src= "@Url.Content("~/Uploads/"+Model.Images[i])" alt="Image" /></div>}
-        <br>
-     @foreach(string str in Model.vals){
-        <div>@str</div>}
-     <br><br>
-     <div><img src= "@Url.Content("~/Uploads/"+Model.Images[Model.Images.Count()-1])" alt="Image" /></div>
+
+     <div class="done-class">
+         <div class="done-box">
+
+             <div class="done-primary">
+                 <img src="@Url.Content("~/Uploads/"+Model.Images[Model.Images.Count()-1])" alt="First image" class="done-primary-image" />
+             </div>
+
+             @for (int i = 0; i < Model.Images.Count() - 1; i++)
+        {
+
+         <div class="@("done-item " + (i==0 ? "done-active" : ""))">
+             <img src="@Url.Content("~/Uploads/"+Model.Images[i])" alt="Image" class="done-image" />
+             <div class="@("done-text " + (i==0 ? "done-active-text" : ""))">@Model.vals[i]</div>
+         </div>
+
+}
+
+         </div>
+     </div>
+
+     <div class="buttonek" style="text-align: center;">
+         <button class="drag-button drag-button-done" type="submit" style="margin-top: 50px;">Try it again!</button>
+     </div>
+
 </body>
 </html>

@@ -6,25 +6,27 @@
 <head>
     <title>Nbrand.it</title>
     <link rel="stylesheet" href="../../Assets/style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 <body>
     <div class="menu">
         <div class="menu-title"><a href="/">Nbrand.it</a></div>
-        <div class="menu-items">
-            <div class="menu-items-item">About</div> 
-            <div class="menu-items-item">What we do</div> 
-            <div class="menu-items-item">Help</div>         
-        </div>
-        <div class="menu-profile">15 credits</div>
     </div>
     <div class="drag">
-        @using (Html.BeginForm("Index", "Home", FormMethod.Post, new { enctype = "multipart/form-data"})){
-        <div class="drag-input">
-            <input type="file" name="file" id="file" /><br><br>
+        <label for="file">
+        @using (Html.BeginForm("Index", "Home", FormMethod.Post, new { enctype = "multipart/form-data" })){
+        <div class="drag-input box__input">
+            <div class="drag-icon">
+                <i class="fa fa-upload fa-3x" aria-hidden="true"></i>
+            </div>
+            <input type="file" name="file" id="file" class="box__file" data-multiple-caption="{count} files selected" multiple style="display: none;"/>
+            <strong>Click and choose a file</strong><span class="box__dragndrop"> or drag it here</span>.
         </div>
-        <button class="drag-button" type="submit">Upload</button>
+        <button class="drag-button box__button" type="submit">Upload</button>
         <div class="drag-message">@ViewBag.Message</div>
         }
+            </label>
     </div>
 </body>
 </html>
